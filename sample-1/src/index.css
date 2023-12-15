@@ -1,0 +1,16 @@
+.sample-1-button {
+  display: inline-block;
+  padding: 4px 6px;
+  background-color: #fefefe;
+  transition: background-color 0.2s;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.sample-1-button:hover {
+  background-color: #efefef;
+}
+
+.sample-1-button:active {
+  background-color: #dedede;
+}

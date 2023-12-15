@@ -1,0 +1,43 @@
+.v-counter {
+  display: inline-flex;
+  position: relative;
+  flex-direction: row;
+  font-family: sans-serif;
+  font-size: 16px;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.v-counter__display {
+  display: inline-block;
+  padding: 4px 6px;
+  min-width: 50px;
+  text-align: center;
+  margin: 0px -5px;
+  z-index: 0;
+  font-weight: bold;
+}
+
+.v-counter__btn {
+  display: inline-block;
+  padding: 4px 6px;
+  background-color: #eee;
+  transition: background-color 0.2s;
+  border-radius: 5px;
+  width: max-content;
+  z-index: 1;
+  border: 2px solid #dcdcdc;
+  transition: background-color 0.2s;
+}
+
+.v-counter__btn:hover {
+  background-color: #efefef;
+}
+
+.v-counter__btn:active {
+  background-color: #dedede;
+}
