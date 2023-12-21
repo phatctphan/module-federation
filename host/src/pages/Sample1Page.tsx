@@ -21,7 +21,7 @@ export default function Sample1Page() {
         <b>
           <code>createButton</code>
         </b>{" "}
-        function is imported to this page and is injected to a DOM tree.
+        function is imported to this page.
       </Typography>
       <div ref={ref}></div>
     </Stack>

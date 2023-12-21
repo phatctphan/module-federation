@@ -1,7 +1,7 @@
 import { Stack, Typography } from "@mui/material";
 import { Suspense, lazy } from "react";
 // @ts-ignore
-const TodoApp = lazy(() => import("Sample4/App"));
+const TodoWidget = lazy(() => import("Sample4/TodoWidget"));
 
 export default function Sample4Page() {
   return (
@@ -11,7 +11,7 @@ export default function Sample4Page() {
         host application.
       </Typography>
       <Suspense fallback={null}>
-        <TodoApp />
+        <TodoWidget />
       </Suspense>
     </Stack>
   );

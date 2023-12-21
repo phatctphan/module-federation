@@ -29,19 +29,19 @@ export const routes: RouteObject[] = [
     },
   },
   {
-    path: "sample-3",
-    element: <Sample3Page />,
-    handle: {
-      title: "Style Clashing",
-      navigation: "Style Clashing",
-    },
-  },
-  {
     path: "sample-4",
     element: <Sample4Page />,
     handle: {
       title: "Todo Widget",
       navigation: "Todo Widget",
+    },
+  },
+  {
+    path: "sample-3",
+    element: <Sample3Page />,
+    handle: {
+      title: "Style Clashing",
+      navigation: "Style Clashing",
     },
   },
   {

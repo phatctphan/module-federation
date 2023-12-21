@@ -34,7 +34,8 @@ module.exports = {
       name: "Sample4",
       filename: "remote-entry.js",
       exposes: {
-        "./App": "./src/App",
+        "./TodoWidget": "./src/widgets/TodoWidget",
+        "./TodoSlice": "./src/store/TodoSlice",
       },
       shared: {
         react: {
@@ -46,6 +47,16 @@ module.exports = {
           eager: true,
           singleton: true,
           requiredVersion: dependencies["react-dom"],
+        },
+        "@reduxjs/toolkit": {
+          eager: true,
+          singleton: true,
+          requiredVersion: dependencies["@reduxjs/toolkit"],
+        },
+        "react-redux": {
+          eager: true,
+          singleton: true,
+          requiredVersion: dependencies["react-redux"],
         },
       },
     }),

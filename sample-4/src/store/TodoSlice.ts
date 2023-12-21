@@ -15,7 +15,7 @@ export type TodoStatistics = {
   pending: number;
 };
 
-const initialState: TodoState = {
+export const initialState: TodoState = {
   items: [],
   filter: {
     status: null,

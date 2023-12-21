@@ -14,6 +14,9 @@ module.exports = {
   },
   devServer: {
     port: 3001,
+    historyApiFallback: {
+      index: "/",
+    },
   },
   module: {
     rules: [
@@ -50,6 +53,16 @@ module.exports = {
           eager: true,
           singleton: true,
           requiredVersion: dependencies["react-dom"],
+        },
+        "@reduxjs/toolkit": {
+          eager: true,
+          singleton: true,
+          requiredVersion: dependencies["@reduxjs/toolkit"],
+        },
+        "react-redux": {
+          eager: true,
+          singleton: true,
+          requiredVersion: dependencies["react-redux"],
         },
       },
     }),
